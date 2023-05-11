@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+// Importa el maneojo de las rutas
+import router from './router'
+
+import './assets/index.css'
+
+// Crea una aplicación VUE
+createApp(App).use(router).mount('#app')
